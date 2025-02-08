@@ -12,8 +12,7 @@ import anvil.tables as tables
 from anvil.tables import app_tables
 
 def show_landing_page():
-    # Changed to standard_page (note the underscore)
-    open_form('standard_page')
+    open_form('home')
 
 # Make this the default startup form
-anvil.server.call('anvil.private.set_default_form', 'standard_page')
+anvil.server.call('anvil.private.set_default_form', 'home')
