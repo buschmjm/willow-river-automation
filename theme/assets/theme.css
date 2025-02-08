@@ -1120,3 +1120,58 @@ div.plot-container.plotly svg.main-svg {
   margin: 0 10px;
   text-decoration: none;
 }
+
+/* Landing Page Specific Styles */
+.landing-content {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+}
+
+.landing-header {
+    margin-top: 56px; /* Height of the app bar */
+}
+
+.hero {
+    background-image: url('_/theme/assets/laptop-593673.jpg');
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Override default content padding for landing page sections */
+.landing-content > div {
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .landing-header {
+        margin-top: 48px;
+    }
+    
+    .hero {
+        padding: 60px 20px;
+    }
+    
+    .hero h1 {
+        font-size: 32px;
+    }
+}
