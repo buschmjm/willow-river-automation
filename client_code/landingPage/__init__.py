@@ -20,3 +20,7 @@ class landingPage(landingPageTemplate):
         except Exception as e:
             print(f"Error loading HTML: {e}")
             self.html = f"<p>Error loading landing page: {e}</p>"
+
+    def form_show(self, **event_args):
+      """This method is called when the form is shown on the page"""
+      pass

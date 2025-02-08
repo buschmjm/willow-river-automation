@@ -104,6 +104,7 @@ components:
   properties: {background: 'theme:Primary background, headers', col_widths: '{}', foreground: 'theme:Text, navigation bar', role: tonal-card}
   type: ColumnPanel
 container:
+  event_bindings: {show: form_show}
   properties: {background: ''}
   type: ColumnPanel
 is_package: true
