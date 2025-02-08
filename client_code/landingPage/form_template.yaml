@@ -1,3 +1,109 @@
-components: []
-container: {type: ColumnPanel}
+components:
+- components:
+  - components:
+    - data_bindings: []
+      layout_properties: {grid_position: 'BHNOEO,RJGWYA'}
+      name: label_1
+      properties:
+        align: left
+        background: ''
+        font: IBM Plex Sans
+        font_size: 48
+        foreground: theme:Text, navigation bar
+        italic: true
+        spacing:
+          margin: ['0', null, '0', '10']
+          padding: [null, null, '20', null]
+        text: Willow River Automation Services
+      type: Label
+    - layout_properties: {grid_position: 'RYRKRF,ZNWVRB'}
+      name: services_button
+      properties:
+        background: theme:Highlights, buttons, borders
+        bold: true
+        foreground: ''
+        role: outlined-button
+        spacing:
+          margin: ['0', null, '0', null]
+        text: Services
+      type: Button
+    - layout_properties: {grid_position: 'RYRKRF,FMYUIR'}
+      name: contact_button
+      properties:
+        background: theme:Highlights, buttons, borders
+        bold: true
+        foreground: ''
+        role: outlined-button
+        spacing:
+          margin: ['0', null, '0', null]
+        text: Contact
+      type: Button
+    - layout_properties: {grid_position: 'RYRKRF,VMAISI'}
+      name: about_us_button
+      properties:
+        background: theme:Highlights, buttons, borders
+        bold: true
+        foreground: ''
+        role: outlined-button
+        spacing:
+          margin: ['0', null, '0', null]
+        text: About Us
+      type: Button
+    - layout_properties: {grid_position: 'RYRKRF,HTHTQO'}
+      name: client_login_button
+      properties:
+        background: theme:Highlights, buttons, borders
+        bold: true
+        font_size: null
+        foreground: ''
+        role: outlined-button
+        spacing:
+          margin: ['0', null, '0', null]
+          padding: ['0', null, '0', null]
+        spacing_above: none
+        spacing_below: none
+        text: Client Login
+      type: Button
+    layout_properties: {grid_position: 'LRHVLJ,XFVWJU'}
+    name: outlined_card_2
+    properties:
+      role: outlined-card
+      spacing:
+        padding: ['0', null, '20', null]
+    type: ColumnPanel
+  - layout_properties: {grid_position: 'CICKNG,FECXPY'}
+    name: spacer_1
+    properties: {height: 43}
+    type: Spacer
+  - components:
+    - components:
+      - layout_properties: {}
+        name: call_to_action
+        properties: {align: right, bold: true, foreground: 'theme:Highlights, buttons, borders', italic: false, role: null, text: Discover Our Services!}
+        type: Button
+      layout_properties: {grid_position: 'ESPGAQ,OGDRHH'}
+      name: rich_text_1
+      properties:
+        content: |
+          # Streamline Your Business with Expert Automation Solutions
+
+          **Willow River Automation Services** specializes in optimizing workflows and enhancing efficiency for small businesses. Partner with us to save time and boost your bottom line.
+        spacing:
+          margin: ['0', null, null, null]
+          padding: ['0', null, null, null]
+      type: RichText
+    layout_properties: {grid_position: 'APJMUH,OKVIUT'}
+    name: outlined_card_3
+    properties:
+      role: outlined-card
+      spacing:
+        padding: ['8', null, null, null]
+    type: ColumnPanel
+  layout_properties: {grid_position: 'YWLGPO,QVWJKA'}
+  name: outlined_card_1
+  properties: {background: 'theme:Primary background, headers', col_widths: '{}', foreground: 'theme:Text, navigation bar', role: tonal-card}
+  type: ColumnPanel
+container:
+  properties: {background: ''}
+  type: ColumnPanel
 is_package: true
