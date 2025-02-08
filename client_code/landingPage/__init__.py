@@ -7,6 +7,6 @@ class landingPage(landingPageTemplate):
         self.init_components(**properties)
 
         # Load the external HTML file into the HTML component
-        with open("theme/assets/staticLanding.html", 'r') as f:
+        with open("staticLanding.html", 'r') as f:
             html_string = f.read()
         self.html = html_string
