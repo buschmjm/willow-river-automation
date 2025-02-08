@@ -14,7 +14,7 @@ class landingPage(landingPageTemplate):
                 html_string = f.read()
             self.html = html_string
             print("HTML loaded successfully.")
-        except FileNotFoundError:
+        except OSError:
             print(f"Error: File not found at {filepath}")
             self.html = "<p>Error: Landing page HTML file not found.</p>"
         except Exception as e:
