@@ -12,4 +12,4 @@ import anvil.tables as tables
 from anvil.tables import app_tables
 
 def show_landing_page():
-    open_form('landingPage')
+    open_form('standard_page')
