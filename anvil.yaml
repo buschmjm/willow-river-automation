@@ -1,7 +1,8 @@
 allow_embedding: false
 dependencies: []
-name: M3 App 1
-package_name: M3_App_1
+metadata: {title: Willow River Automation}
+name: Willow River Automation Services
+package_name: Willow_River_Automation_Services
 renamed: true
 runtime_options:
   client_version: '3'
