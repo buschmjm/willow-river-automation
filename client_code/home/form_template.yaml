@@ -63,6 +63,6 @@ components:
   properties: {background: 'theme:Primary background, headers', foreground: ''}
   type: LinearPanel
 container:
-  properties: {html: '@theme:standard-page.html'}
+  properties: {background: 'theme:Primary background, headers', foreground: '', html: '@theme:standard-page.html'}
   type: HtmlTemplate
 is_package: true
