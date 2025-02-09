@@ -1,0 +1,15 @@
+.landing-content {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.landing-header {
+    background-color: #5D4037;
+    color: #F5F5DC;
+    padding: 20px;
+    text-align: center;
+    margin-top: 56px;
+}
+
+/* ... rest of your landing page CSS ... */
