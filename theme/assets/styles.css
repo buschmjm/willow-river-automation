@@ -1,0 +1,148 @@
+/* General Page Styling */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5DC;
+    color: #3E2723;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #5D4037;
+    color: white;
+}
+
+.navbar .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar ul .login-button {
+    background-color: #A1887F;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background: url('/_/theme/laptop-593673.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+/* Semi-transparent overlay for readability */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Hero text content */
+.hero-text {
+    position: relative;
+    z-index: 2; /* Ensures text appears above the overlay */
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 60%;
+}
+
+.hero h2 {
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #A1887F;
+    color: white;
+    padding: 14px 24px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #8D6E63;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: #D7CCC8;
+}
+
+.feature {
+    text-align: center;
+    width: 30%;
+    padding: 20px;
+    background: #FFF;
+    border-radius: 10px;
+}
+
+/* Impact Section */
+.impact {
+    text-align: center;
+    padding: 50px;
+}
+
+.impact-metrics {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.metric {
+    background-color: #5D4037;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #3E2723;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
