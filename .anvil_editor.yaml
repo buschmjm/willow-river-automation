@@ -1,11 +1,11 @@
 unique_ids:
   assets:
+    landing.css: VDI3MMGWGWBTPWFZQQX3BKL5UYTD5P2J
     laptop-593673.jpg: '1739055099735287188672421.29645'
     standard-page.html: IOUWV7AEVM3LSF5B5PPSSJLWKY7CT63L
-    staticLanding.html: QU5CYD65R5CJZIZ5BJCWAK44ZZEJ4HS5
     theme.css: PAM4WXWDNKOOK74NZHK5TZ4XYF7M4OWL
   forms:
-    landingPage: '173906611713570326460865.87402'
+    landing: '1739067126204881442661780.9094'
   modules: {}
   scripts: {}
   server_modules: {}
