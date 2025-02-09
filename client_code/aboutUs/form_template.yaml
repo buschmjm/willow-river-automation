@@ -1,0 +1,165 @@
+components: []
+container:
+  properties:
+    html: |-
+      <center style="font-style:italic; color:#888; margin: 3em;">
+       <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Willow River Automation Services</title>
+          <link rel="stylesheet" href="_/theme/styles.css">
+          <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&family=Indie+Flower&display=swap" rel="stylesheet">
+          <style>
+              /* Flip Card Styles */
+              .flip-card {
+                  background-color: transparent;
+                  width: 320px;
+                  height: 220px;
+                  perspective: 1000px;
+                  margin: 20px;
+              }
+
+              .flip-card-inner {
+                  position: relative;
+                  width: 100%;
+                  height: 100%;
+                  text-align: center;
+                  transition: transform 0.6s;
+                  transform-style: preserve-3d;
+              }
+
+              .flip-card:hover .flip-card-inner {
+                  transform: rotateY(180deg);
+              }
+
+              .flip-card-front, .flip-card-back {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  backface-visibility: hidden;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  border-radius: 10px;
+                  padding: 25px;
+                  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+              }
+
+              .flip-card-front {
+                  background-color: #FFEB3B;
+                  color: #3E2723;
+                  font-family: 'Indie Flower', cursive;
+                  transform: rotate(2deg);
+              }
+
+              .flip-card-front h3 {
+                  margin: 10px 0;
+                  font-size: 22px;
+              }
+
+              .flip-card-front p {
+                  font-size: 18px;
+              }
+
+              .flip-card-back {
+                  background-color: #5D4037;
+                  color: white;
+                  transform: rotateY(180deg);
+              }
+
+              .about, .impact {
+                  padding: 60px 20px;
+              }
+          </style>
+      </head>
+      <body>
+
+          <header class="navbar">
+              <h1 class="logo">Willow River Automation Services</h1>
+              <nav>
+                  <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#" class="login-button">Login</a></li>
+                  </ul>
+              </nav>
+          </header>
+
+          <section class="hero">
+              <div class="hero-overlay"></div> <!-- Background Overlay -->
+              <div class="hero-text">
+                  <h2>Streamline Your Business with Expert Automation</h2>
+                  <p>Optimize workflows, increase efficiency, and save time with Willow River Automation Services.</p>
+                  <button class="cta-button">Discover Our Services</button>
+              </div>
+          </section>
+
+          <section class="about">
+              <h2>About Us</h2>
+              <p>At Willow River Automation Services, we are passionate about optimizing workflows and reducing inefficiencies. Our goal is to help businesses eliminate redundancies, improve productivity, and accomplish more in less time. Through smart automation and seamless integration, we empower companies to focus on what truly matters—growth and innovation.</p>
+          </section>
+
+          <section class="features">
+              <div class="flip-card">
+                  <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <h3>Workflow Automation</h3>
+                          <p>Eliminate manual processes and optimize efficiency.</p>
+                      </div>
+                      <div class="flip-card-back">
+                          <p>Automating workflows allows businesses to scale operations without the burden of manual tasks. It reduces errors, improves productivity, and lets your team focus on high-value activities instead of repetitive processes.</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="flip-card">
+                  <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <h3>Process Optimization</h3>
+                          <p>Identify and improve business workflows.</p>
+                      </div>
+                      <div class="flip-card-back">
+                          <p>Optimizing processes ensures that businesses operate efficiently by eliminating bottlenecks and redundancies. With streamlined workflows, companies can deliver better results faster and with fewer resources.</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="flip-card">
+                  <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <h3>Systems Integration</h3>
+                          <p>Seamlessly connect your business software and tools.</p>
+                      </div>
+                      <div class="flip-card-back">
+                          <p>Integrating systems creates a seamless flow of information between different business tools, eliminating data silos. This leads to better decision-making, reduced costs, and improved overall efficiency.</p>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+          <section class="impact">
+              <h2>See the Impact of Automation</h2>
+              <div class="impact-metrics">
+                  <div class="metric"><strong>10,000+</strong> Automation Runs</div>
+                  <div class="metric"><strong>500+ Hours</strong> Saved</div>
+                  <div class="metric"><strong>+15%</strong> Efficiency Increase</div>
+              </div>
+          </section>
+
+          <footer>
+              <p>&copy; 2025 Willow River Automation Services. All Rights Reserved.</p>
+              <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>
+          </footer>
+
+      </body>
+      </html>
+
+      </center>
+      <div anvil-slot="default"></div>
+  type: HtmlTemplate
+is_package: true
