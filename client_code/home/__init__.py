@@ -1,8 +1,8 @@
-from ._anvil_designer import landingPageTemplate
+from ._anvil_designer import homeTemplate
 from anvil import *
 
 
-class landingPage(landingPageTemplate):
+class home(homeTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)

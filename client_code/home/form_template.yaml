@@ -1,0 +1,68 @@
+components:
+- layout_properties: {slot: default}
+  name: content_panel
+  properties: {}
+  type: ColumnPanel
+- components:
+  - name: home_button
+    properties:
+      spacing:
+        padding: ['0', '5', null, '5']
+      text: Home
+    type: Button
+  - layout_properties: {}
+    name: home_button_copy
+    properties:
+      spacing:
+        padding: ['0', '5', null, '5']
+      text: About Us
+    type: Button
+  - layout_properties: {}
+    name: home_button_copy_copy
+    properties:
+      spacing:
+        padding: ['0', '5', null, '5']
+      text: |
+        Services
+    type: Button
+  - layout_properties: {}
+    name: home_button_copy_copy_2
+    properties:
+      spacing:
+        padding: ['0', '5', null, '5']
+      text: Contact
+    type: Button
+  - layout_properties: {expand: false}
+    name: home_button_copy_copy_2_copy
+    properties:
+      background: theme:Accent background, cards
+      foreground: theme:Text, navigation bar
+      role: elevated-button
+      spacing:
+        margin: ['10', '10', '10', '10']
+        padding: ['10', '10', '10', '10']
+      text: Login
+    type: Button
+  layout_properties: {slot: nav-right}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+- components:
+  - layout_properties: {}
+    name: label_1
+    properties:
+      bold: false
+      font_size: 24
+      foreground: theme:On Secondary
+      spacing:
+        margin: [null, '10', null, '10']
+      text: Willow River Automation Services
+    type: Label
+  layout_properties: {slot: title}
+  name: linear_panel_1
+  properties: {background: 'theme:Primary background, headers', foreground: ''}
+  type: LinearPanel
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate
+is_package: true
