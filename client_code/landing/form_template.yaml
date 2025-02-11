@@ -56,138 +56,275 @@ container:
                   color: #FFEB3B;
                   border-bottom: 2px solid #FFEB3B;
               }
-          </style>
-      </head>
-      <body>
 
-          <header class="navbar">
-              <h1 class="logo">Willow River Automation Services</h1>
+              .values-grid {
+                  display: grid;
+                  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                  gap: 2rem;
+                  padding: 3rem 0;
+              }
+
+              .pricing-grid {
+                  display: grid;
+                  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                  gap: 2rem;
+                  padding: 3rem;
+              }
+
+              .package {
+                  background: white;
+                  border-radius: 10px;
+                  padding: 2rem;
+                  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                  text-align: center;
+              }
+
+              .package.featured {
+                  transform: scale(1.05);
+                  border: 2px solid #FFEB3B;
+              }
+
+              .package-button {
+                  background: #5D4037;">
+                  color: white;>
+                  border: none;
+                  padding: 1rem 2rem;      <h3>Workflow Automation</h3>
+                  border-radius: 5px;solutions for repetitive tasks</p>
+                  cursor: pointer;
+                  transition: background-color 0.3s;
+              }      <p>Transform manual processes into automated workflows. Perfect for document processing, data entry, reporting, and customer communications.</p>
+
+              .contact-grid {
+                  display: grid;
+                  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));lass="flip-card">
+                  gap: 3rem;iv class="flip-card-inner">
+                  padding: 3rem;            <div class="flip-card-front">
+              }ess Optimization</h3>
+ions</p>
+              .content-section {
+                  max-width: 1200px;
+                  margin: 0 auto; maximum efficiency. Reduce costs and improve productivity through smart automation.</p>
+                  padding: 3rem 1.5rem;
+              }div>
+          </style>
+      </head>iv class="flip-card">
+      <body>                      <div class="flip-card-inner">
+lass="flip-card-front">
+          <header class="navbar">ions</h3>
+              <h1 class="logo">Willow River Automation Services</h1>>Connect your business tools</p>
               <nav>
-                  <ul>
-                      <li><a href="#" class="nav-link active" data-section="home">Home</a></li>
+                  <ul>p-card-back">
+                      <li><a href="#" class="nav-link active" data-section="home">Home</a></li>orite business tools: Salesforce, Google Workspace, Microsoft 365, Slack, and more.</p>
                       <li><a href="#" class="nav-link" data-section="about">About Us</a></li>
-                      <li><a href="#" class="nav-link" data-section="services">Services</a></li>
-                      <li><a href="#" class="nav-link" data-section="contact">Contact</a></li>
+                      <li><a href="#" class="nav-link" data-section="services">Services</a></li>div>
+                      <li><a href="#" class="nav-link" data-section="contact">Contact</a></li>div>
                       <li><a href="#" class="login-button">Login</a></li>
                   </ul>
               </nav>
-          </header>
-
-          <!-- Home Section -->
-          <section id="home" class="page-section active">
-              <div class="hero">
+          </header>2>See the Impact of Automation</h2>
+iv class="impact-metrics">
+          <!-- Home Section -->                      <div class="metric"><strong>10,000+</strong> Automation Runs</div>
+          <section id="home" class="page-section active">etric"><strong>500+ Hours</strong> Saved</div>
+              <div class="hero"></strong> Efficiency Increase</div>
                   <div class="hero-overlay"></div> <!-- Background Overlay -->
                   <div class="hero-text">
                       <h2>Streamline Your Business with Expert Automation</h2>
                       <p>Optimize workflows, increase efficiency, and save time with Willow River Automation Services.</p>
                       <button class="cta-button">Discover Our Services</button>
-                  </div>
-              </div>
-              
-              <section class="features">
+                  </div>bout" class="page-section">
+              </div>lass="hero about-hero">
+              ></div>
+              <section class="features">>
                   <div class="feature">
-                      <h3>Workflow Automation</h3>
-                      <p>Eliminate manual processes and optimize efficiency.</p>
-                  </div>
-                  <div class="feature">
+                      <h3>Workflow Automation</h3>  <p>Empowering businesses with intelligent automation solutions since 2020</p>
+                      <p>Eliminate manual processes and optimize efficiency.</p>div>
+                  </div>              </div>
+                  <div class="feature">section">
                       <h3>Process Optimization</h3>
-                      <p>Identify and improve business workflows.</p>
+                      <p>Identify and improve business workflows.</p>iver Automation Services, we're passionate about optimizing workflows and reducing inefficiencies. Our goal is to help businesses eliminate redundancies, improve productivity, and accomplish more in less time. Through smart automation and seamless integration, we empower companies to focus on what truly matters—growth and innovation.</p>
                   </div>
-                  <div class="feature">
-                      <h3>Systems Integration</h3>
+                  <div class="feature">">
+                      <h3>Systems Integration</h3>m">
                       <p>Seamlessly connect your business software and tools.</p>
-                  </div>
-              </section>
-              
-              <section class="impact">
+                  </div>  <p>Constantly exploring new automation technologies and solutions</p>
+              </section>  </div>
+              m">
+              <section class="impact">lity</h3>
                   <h2>See the Impact of Automation</h2>
-                  <div class="impact-metrics">
-                      <div class="metric"><strong>10,000+</strong> Automation Runs</div>
-                      <div class="metric"><strong>500+ Hours</strong> Saved</div>
-                      <div class="metric"><strong>+15%</strong> Efficiency Increase</div>
+                  <div class="impact-metrics">  </div>
+                      <div class="metric"><strong>10,000+</strong> Automation Runs</div>  <div class="value-item">
+                      <div class="metric"><strong>500+ Hours</strong> Saved</div>                          <h3>Efficiency</h3>
+                      <div class="metric"><strong>+15%</strong> Efficiency Increase</div>        <p>Maximizing productivity through smart process optimization</p>
                   </div>
               </section>
+          </section>>
           </section>
-
           <!-- About Section -->
           <section id="about" class="page-section">
-              <div class="hero">
+              <div class="hero">="page-section">
                   <div class="hero-overlay"></div>
                   <div class="hero-text">
-                      <h2>About Willow River Automation</h2>
-                      <p>Learn about our mission to transform business processes</p>
-                  </div>
+                      <h2>About Willow River Automation</h2>v class="hero-text">
+                      <p>Learn about our mission to transform business processes</p>    <h2>Automation Solutions</h2>
+                  </div>t automation package for your business</p>
               </div>
-              <div class="content-section">
+              <div class="content-section">v>
                   <h2>Our Story</h2>
                   <p>We are passionate about helping businesses achieve their full potential through automation.</p>
               </div>
           </section>
 
-          <!-- Services Section -->
-          <section id="services" class="page-section">
-              <div class="hero">
-                  <div class="hero-overlay"></div>
+          <!-- Services Section -->   <li>Custom automation setup on your accounts</li>
+          <section id="services" class="page-section">     <li>Integration with up to 3 platforms</li>
+              <div class="hero">           <li>Training and documentation</li>
+                  <div class="hero-overlay"></div>                          <li>30 days of support</li>
                   <div class="hero-text">
-                      <h2>Our Services</h2>
+                      <h2>Our Services</h2>on>
                       <p>Comprehensive automation solutions for your business</p>
+                  </div>tured">
+              </div>
+              <div class="content-section">/month</p>
+                  <h2>What We Offer</h2> <ul>
+                  <p>From workflow automation to custom integrations, we've got you covered.</p>         <li>Fully managed automation hosting</li>
+              </div>       <li>Unlimited integrations</li>
+          </section>             <li>24/7 monitoring and maintenance</li>
+             <li>Monthly optimization reviews</li>
+          <!-- Contact Section -->      <li>Priority support</li>
+          <section id="contact" class="page-section">      </ul>
+              <div class="hero">                      <button class="package-button">Contact Us</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+is_package: true  type: HtmlTemplate      </html>      </body>          </script>              });                  });                      showSection(section);                      const section = e.target.getAttribute('data-section');                      e.preventDefault();                  link.addEventListener('click', (e) => {              document.querySelectorAll('.nav-link').forEach(link => {              // Add click handlers to navigation links              }                  });                      }                          link.classList.add('active');                      if (link.getAttribute('data-section') === sectionId) {                      link.classList.remove('active');                  document.querySelectorAll('.nav-link').forEach(link => {                  // Update navigation active state                                    document.getElementById(sectionId).classList.add('active');                  // Show selected section                                    });                      section.classList.remove('active');                  document.querySelectorAll('.page-section').forEach(section => {                  // Hide all sections              function showSection(sectionId) {          <script>          </footer>              <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>              <p>&copy; 2025 Willow River Automation Services. All Rights Reserved.</p>          <footer>          </section>              </div>                  </div>                      <p>Contact form coming soon...</p>                      <h3>Send Us a Message</h3>                      <!-- Placeholder for actual form implementation -->                  <div class="contact-form">                  </div>                      </div>                          </div>                              <p>(555) 123-4567</p>                              <h4>Phone</h4>                          <div class="method">                          </div>                              <p>info@willowriver.automation</p>                              <h4>Email</h4>                          <div class="method">                      <div class="contact-methods">                      <p>Ready to transform your business operations? Let's discuss how automation can help you achieve your goals.</p>                      <h3>Get In Touch</h3>                  <div class="contact-info">              <div class="contact-grid">              </div>                  </div>                      <p>Schedule a free consultation to discuss your automation needs</p>                      <h2>Start Your Automation Journey</h2>                  <div class="hero-text">                  <div class="hero-overlay"></div>              <div class="hero">          <section id="contact" class="page-section">          <!-- Contact Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+is_package: true  type: HtmlTemplate      </html>      </body>          </script>              });                  });                      showSection(section);                      const section = e.target.getAttribute('data-section');                      e.preventDefault();                  link.addEventListener('click', (e) => {              document.querySelectorAll('.nav-link').forEach(link => {              // Add click handlers to navigation links              }                  });                      }                          link.classList.add('active');                      if (link.getAttribute('data-section') === sectionId) {                      link.classList.remove('active');                  document.querySelectorAll('.nav-link').forEach(link => {                  // Update navigation active state                                    document.getElementById(sectionId).classList.add('active');                  // Show selected section                                    });                      section.classList.remove('active');                  document.querySelectorAll('.page-section').forEach(section => {                  // Hide all sections              function showSection(sectionId) {          <script>          </footer>              <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>              <p>&copy; 2025 Willow River Automation Services. All Rights Reserved.</p>          <footer>          </section>              </div>                  <p>Ready to start your automation journey? Reach out to us today.</p>                  <h2>Contact Us</h2>              <div class="content-section">              </div>                  </div>                      <p>Let's discuss how we can help automate your business</p>                      <h2>Get In Touch</h2>                  <div class="hero-text">                  <div class="hero-overlay"></div>                  </div>
+                  <div class="package">
+                      <h3>Enterprise Custom</h3>
+                      <p class="price">Custom Pricing</p>
+                      <ul>
+                          <li>Complex workflow automation</li>
+                          <li>Custom API development</li>
+                          <li>Dedicated support team</li>
+                          <li>SLA guarantees</li>
+                          <li>White-label options</li>
+                      </ul>
+                      <button class="package-button">Request Quote</button>
                   </div>
               </div>
-              <div class="content-section">
-                  <h2>What We Offer</h2>
-                  <p>From workflow automation to custom integrations, we've got you covered.</p>
-              </div>
           </section>
-
-          <!-- Contact Section -->
-          <section id="contact" class="page-section">
-              <div class="hero">
-                  <div class="hero-overlay"></div>
-                  <div class="hero-text">
-                      <h2>Get In Touch</h2>
-                      <p>Let's discuss how we can help automate your business</p>
-                  </div>
-              </div>
-              <div class="content-section">
-                  <h2>Contact Us</h2>
-                  <p>Ready to start your automation journey? Reach out to us today.</p>
-              </div>
-          </section>
-
-          <footer>
-              <p>&copy; 2025 Willow River Automation Services. All Rights Reserved.</p>
-              <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>
-          </footer>
-
-          <script>
-              function showSection(sectionId) {
-                  // Hide all sections
-                  document.querySelectorAll('.page-section').forEach(section => {
-                      section.classList.remove('active');
-                  });
-                  
-                  // Show selected section
-                  document.getElementById(sectionId).classList.add('active');
-                  
-                  // Update navigation active state
-                  document.querySelectorAll('.nav-link').forEach(link => {
-                      link.classList.remove('active');
-                      if (link.getAttribute('data-section') === sectionId) {
-                          link.classList.add('active');
-                      }
-                  });
-              }
-
-              // Add click handlers to navigation links
-              document.querySelectorAll('.nav-link').forEach(link => {
-                  link.addEventListener('click', (e) => {
-                      e.preventDefault();
-                      const section = e.target.getAttribute('data-section');
-                      showSection(section);
-                  });
-              });
-          </script>
-      </body>
-      </html>
-  type: HtmlTemplate
-is_package: true
