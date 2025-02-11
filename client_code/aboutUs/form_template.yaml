@@ -1,5 +1,6 @@
 components: []
 container:
+  event_bindings: {click: handle_click}
   properties:
     html: |-
       <center style="font-style:italic; color:#888; margin: 3em;">
@@ -161,7 +162,5 @@ container:
 
       </center>
       <div anvil-slot="default"></div>
-  event_bindings:
-    click: handle_click
   type: HtmlTemplate
 is_package: true

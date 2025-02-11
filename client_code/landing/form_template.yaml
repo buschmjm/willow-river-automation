@@ -1,5 +1,6 @@
 components: []
 container:
+  event_bindings: {click: handle_click}
   properties:
     html: |
       <!DOCTYPE html>
@@ -168,7 +169,5 @@ container:
 
       </body>
       </html>
-  event_bindings:
-    click: handle_click
   type: HtmlTemplate
 is_package: true
