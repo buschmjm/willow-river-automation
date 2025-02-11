@@ -6,10 +6,9 @@ class landing(landingTemplate):
   def __init__(self, **properties):
     self.init_components(**properties)
     
-  def handle_click(self, event_name, **event_args):
+  def handle_click(self, **event_args):
     """Handle navigation clicks"""
-    target = event_args.get('element')
-    if target and hasattr(target, 'getAttribute'):
-      page = target.getAttribute('data-page')
-      if page == 'aboutUs':
-        get_open_form('aboutUs')
+    if hasattr(event_args['sender'], 'tag'):
+      clicked = event_args['sender']
+      if clicked.tag.name == 'A' and clicked.get_attribute('data-page') == 'aboutUs':
+        open_form('aboutUs')
