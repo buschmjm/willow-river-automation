@@ -168,5 +168,7 @@ container:
 
       </body>
       </html>
+  event_bindings:
+    click: handle_click
   type: HtmlTemplate
 is_package: true
