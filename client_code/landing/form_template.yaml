@@ -156,6 +156,55 @@ container:
                   margin: 0 auto;
                   padding: 3rem 1.5rem;
               }
+
+              /* Additional About Section Styles */
+              .challenges-grid {
+                  display: grid;
+                  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                  gap: 2rem;
+                  padding: 2rem 0;
+              }
+              
+              .challenge-item {
+                  background: #f5f5f5;
+                  padding: 1.5rem;
+                  border-radius: 8px;
+                  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+              }
+              
+              .challenge-item h3 {
+                  color: #5D4037;
+                  margin-bottom: 1rem;
+              }
+              
+              .industry-list {
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 1rem;
+                  margin: 2rem 0;
+              }
+              
+              .industry-tag {
+                  background: #5D4037;
+                  color: white;
+                  padding: 0.5rem 1rem;
+                  border-radius: 20px;
+                  font-size: 0.9rem;
+              }
+              
+              .process-steps {
+                  display: grid;
+                  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                  gap: 2rem;
+                  margin: 2rem 0;
+              }
+              
+              .process-step {
+                  text-align: center;
+                  padding: 1.5rem;
+                  border: 2px solid #FFEB3B;
+                  border-radius: 8px;
+              }
           </style>
       </head>
       <body>
@@ -234,26 +283,73 @@ container:
               <div class="hero">
                   <div class="hero-overlay"></div>
                   <div class="hero-text">
-                      <h2>About Willow River Automation</h2>
-                      <p>Learn about our mission to transform business processes</p>
+                      <h2>Empowering Businesses with Smart Automation</h2>
+                      <p>Transform your business operations with intelligent workflow solutions</p>
                   </div>
               </div>
+              
               <div class="content-section">
-                  <h2>Our Story</h2>
-                  <p>We are passionate about helping businesses achieve their full potential through automation.</p>
+                  <h2>Our Mission</h2>
+                  <p>At Willow River Automation Services, we believe in the power of efficiency, precision, and innovation. Our mission is to help small and mid-sized businesses leverage workflow automation, business process optimization, and system integration to streamline operations, reduce manual labor, and drive profitability.</p>
+                  
                   <div class="values-grid">
                       <div class="value-item">
-                          <h3>Efficiency</h3>
-                          <p>Maximizing productivity through smart process optimization</p>
+                          <h3>Why We Do This</h3>
+                          <p>We're passionate about helping businesses evolve by eliminating roadblocks caused by outdated processes, disconnected software, and manual workflows. By integrating cutting-edge automation tools, AI-driven solutions, and custom business logic, we empower our clients to work smarter, not harder.</p>
                       </div>
-                      <div class="value-item">
-                          <h3>Innovation</h3>
-                          <p>Constantly exploring new automation technologies and solutions</p>
+                  </div>
+
+                  <h2>Common Challenges We Solve</h2>
+                  <div class="challenges-grid">
+                      <div class="challenge-item">
+                          <h3>🚀 Reducing Manual Data Entry</h3>
+                          <p>Create automated data syncs and API integrations to keep everything up-to-date in real time.</p>
                       </div>
-                      <div class="value-item">
-                          <h3>Reliability</h3>
-                          <p>Ensuring consistent and dependable automation services</p>
+                      <div class="challenge-item">
+                          <h3>🕒 Saving Time on Repetitive Tasks</h3>
+                          <p>Build custom workflow automations that handle routine tasks instantly.</p>
                       </div>
+                      <div class="challenge-item">
+                          <h3>⚠️ Eliminating Costly Errors</h3>
+                          <p>Implement error-proof automation workflows ensuring consistency, accuracy, and compliance.</p>
+                      </div>
+                      <div class="challenge-item">
+                          <h3>📊 Optimizing Business Operations</h3>
+                          <p>Integrate all your systems for seamless communication, reducing manual workarounds.</p>
+                      </div>
+                      <div class="challenge-item">
+                          <h3>💰 Increasing Profitability</h3>
+                          <p>Process orders faster, enhance customer experiences, and scale effortlessly with intelligent automation.</p>
+                      </div>
+                  </div>
+
+                  <h2>How We Work</h2>
+                  <div class="process-steps">
+                      <div class="process-step">
+                          <h3>Process Discovery & Assessment</h3>
+                          <p>Identifying bottlenecks & inefficiencies</p>
+                      </div>
+                      <div class="process-step">
+                          <h3>Custom Automation Development</h3>
+                          <p>Implementing smart workflows & integrations</p>
+                      </div>
+                      <div class="process-step">
+                          <h3>Testing & Optimization</h3>
+                          <p>Ensuring seamless functionality</p>
+                      </div>
+                      <div class="process-step">
+                          <h3>Ongoing Support & Maintenance</h3>
+                          <p>Continuous improvements for long-term success</p>
+                      </div>
+                  </div>
+
+                  <h2>Industries We Serve</h2>
+                  <div class="industry-list">
+                      <span class="industry-tag">Service-Based Businesses</span>
+                      <span class="industry-tag">E-Commerce & Retail</span>
+                      <span class="industry-tag">Healthcare & Wellness</span>
+                      <span class="industry-tag">Finance & Accounting</span>
+                      <span class="industry-tag">Logistics & Transportation</span>
                   </div>
               </div>
           </section>
