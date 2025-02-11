@@ -1,6 +1,5 @@
 components: []
 container:
-  event_bindings: {click: handle_click}
   properties:
     html: |
       <!DOCTYPE html>
@@ -43,53 +42,19 @@ container:
                   max-width: 60%;
               }
 
-              /* Flip Card Styles */
-              .flip-card {
-                  background-color: transparent;
-                  width: 320px;
-                  height: 220px;
-                  perspective: 1000px;
-                  margin: 20px;
+              /* Section Display Control */
+              .page-section {
+                  display: none;
               }
-
-              .flip-card-inner {
-                  position: relative;
-                  width: 100%;
-                  height: 100%;
-                  text-align: center;
-                  transition: transform 0.6s;
-                  transform-style: preserve-3d;
+              
+              .page-section.active {
+                  display: block;
               }
-
-              .flip-card:hover .flip-card-inner {
-                  transform: rotateY(180deg);
-              }
-
-              .flip-card-front, .flip-card-back {
-                  position: absolute;
-                  width: 100%;
-                  height: 100%;
-                  backface-visibility: hidden;
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  justify-content: center;
-                  border-radius: 10px;
-                  padding: 25px;
-                  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-              }
-
-              .flip-card-front {
-                  background-color: #FFEB3B;
-                  color: #3E2723;
-                  font-family: 'Indie Flower', cursive;
-                  transform: rotate(2deg);
-              }
-
-              .flip-card-back {
-                  background-color: #5D4037;
-                  color: white;
-                  transform: rotateY(180deg);
+              
+              /* Active Navigation Link */
+              .nav-link.active {
+                  color: #FFEB3B;
+                  border-bottom: 2px solid #FFEB3B;
               }
           </style>
       </head>
@@ -99,66 +64,93 @@ container:
               <h1 class="logo">Willow River Automation Services</h1>
               <nav>
                   <ul>
-                      <li><a href="#" data-page="landing">Home</a></li>
-                      <li><a href="#" data-page="aboutUs">About Us</a></li>
-                      <li><a href="#">Services</a></li>
-                      <li><a href="#">Contact</a></li>
+                      <li><a href="#" class="nav-link active" data-section="home">Home</a></li>
+                      <li><a href="#" class="nav-link" data-section="about">About Us</a></li>
+                      <li><a href="#" class="nav-link" data-section="services">Services</a></li>
+                      <li><a href="#" class="nav-link" data-section="contact">Contact</a></li>
                       <li><a href="#" class="login-button">Login</a></li>
                   </ul>
               </nav>
           </header>
 
-          <section class="hero">
-              <div class="hero-overlay"></div> <!-- Background Overlay -->
-              <div class="hero-text">
-                  <h2>Streamline Your Business with Expert Automation</h2>
-                  <p>Optimize workflows, increase efficiency, and save time with Willow River Automation Services.</p>
-                  <button class="cta-button">Discover Our Services</button>
+          <!-- Home Section -->
+          <section id="home" class="page-section active">
+              <div class="hero">
+                  <div class="hero-overlay"></div> <!-- Background Overlay -->
+                  <div class="hero-text">
+                      <h2>Streamline Your Business with Expert Automation</h2>
+                      <p>Optimize workflows, increase efficiency, and save time with Willow River Automation Services.</p>
+                      <button class="cta-button">Discover Our Services</button>
+                  </div>
+              </div>
+              
+              <section class="features">
+                  <div class="feature">
+                      <h3>Workflow Automation</h3>
+                      <p>Eliminate manual processes and optimize efficiency.</p>
+                  </div>
+                  <div class="feature">
+                      <h3>Process Optimization</h3>
+                      <p>Identify and improve business workflows.</p>
+                  </div>
+                  <div class="feature">
+                      <h3>Systems Integration</h3>
+                      <p>Seamlessly connect your business software and tools.</p>
+                  </div>
+              </section>
+              
+              <section class="impact">
+                  <h2>See the Impact of Automation</h2>
+                  <div class="impact-metrics">
+                      <div class="metric"><strong>10,000+</strong> Automation Runs</div>
+                      <div class="metric"><strong>500+ Hours</strong> Saved</div>
+                      <div class="metric"><strong>+15%</strong> Efficiency Increase</div>
+                  </div>
+              </section>
+          </section>
+
+          <!-- About Section -->
+          <section id="about" class="page-section">
+              <div class="hero">
+                  <div class="hero-overlay"></div>
+                  <div class="hero-text">
+                      <h2>About Willow River Automation</h2>
+                      <p>Learn about our mission to transform business processes</p>
+                  </div>
+              </div>
+              <div class="content-section">
+                  <h2>Our Story</h2>
+                  <p>We are passionate about helping businesses achieve their full potential through automation.</p>
               </div>
           </section>
 
-          <section class="features">
-              <div class="flip-card">
-                  <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                          <h3>Workflow Automation</h3>
-                          <p>Eliminate manual processes and optimize efficiency.</p>
-                      </div>
-                      <div class="flip-card-back">
-                          <p>Automating workflows allows businesses to scale operations without the burden of manual tasks. It reduces errors, improves productivity, and lets your team focus on high-value activities.</p>
-                      </div>
+          <!-- Services Section -->
+          <section id="services" class="page-section">
+              <div class="hero">
+                  <div class="hero-overlay"></div>
+                  <div class="hero-text">
+                      <h2>Our Services</h2>
+                      <p>Comprehensive automation solutions for your business</p>
                   </div>
               </div>
-              <div class="flip-card">
-                  <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                          <h3>Process Optimization</h3>
-                          <p>Identify and improve business workflows.</p>
-                      </div>
-                      <div class="flip-card-back">
-                          <p>Optimizing processes ensures that businesses operate efficiently by eliminating bottlenecks and redundancies. With streamlined workflows, companies can deliver better results faster.</p>
-                      </div>
-                  </div>
-              </div>
-              <div class="flip-card">
-                  <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                          <h3>Systems Integration</h3>
-                          <p>Seamlessly connect your business software and tools.</p>
-                      </div>
-                      <div class="flip-card-back">
-                          <p>Integrating systems creates a seamless flow of information between different business tools, eliminating data silos. This leads to better decision-making and improved efficiency.</p>
-                      </div>
-                  </div>
+              <div class="content-section">
+                  <h2>What We Offer</h2>
+                  <p>From workflow automation to custom integrations, we've got you covered.</p>
               </div>
           </section>
 
-          <section class="impact">
-              <h2>See the Impact of Automation</h2>
-              <div class="impact-metrics">
-                  <div class="metric"><strong>10,000+</strong> Automation Runs</div>
-                  <div class="metric"><strong>500+ Hours</strong> Saved</div>
-                  <div class="metric"><strong>+15%</strong> Efficiency Increase</div>
+          <!-- Contact Section -->
+          <section id="contact" class="page-section">
+              <div class="hero">
+                  <div class="hero-overlay"></div>
+                  <div class="hero-text">
+                      <h2>Get In Touch</h2>
+                      <p>Let's discuss how we can help automate your business</p>
+                  </div>
+              </div>
+              <div class="content-section">
+                  <h2>Contact Us</h2>
+                  <p>Ready to start your automation journey? Reach out to us today.</p>
               </div>
           </section>
 
@@ -167,6 +159,34 @@ container:
               <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>
           </footer>
 
+          <script>
+              function showSection(sectionId) {
+                  // Hide all sections
+                  document.querySelectorAll('.page-section').forEach(section => {
+                      section.classList.remove('active');
+                  });
+                  
+                  // Show selected section
+                  document.getElementById(sectionId).classList.add('active');
+                  
+                  // Update navigation active state
+                  document.querySelectorAll('.nav-link').forEach(link => {
+                      link.classList.remove('active');
+                      if (link.getAttribute('data-section') === sectionId) {
+                          link.classList.add('active');
+                      }
+                  });
+              }
+
+              // Add click handlers to navigation links
+              document.querySelectorAll('.nav-link').forEach(link => {
+                  link.addEventListener('click', (e) => {
+                      e.preventDefault();
+                      const section = e.target.getAttribute('data-section');
+                      showSection(section);
+                  });
+              });
+          </script>
       </body>
       </html>
   type: HtmlTemplate
