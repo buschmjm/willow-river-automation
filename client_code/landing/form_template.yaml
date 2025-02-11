@@ -41,6 +41,55 @@ container:
                   border-radius: 10px;
                   max-width: 60%;
               }
+
+              /* Flip Card Styles */
+              .flip-card {
+                  background-color: transparent;
+                  width: 320px;
+                  height: 220px;
+                  perspective: 1000px;
+                  margin: 20px;
+              }
+
+              .flip-card-inner {
+                  position: relative;
+                  width: 100%;
+                  height: 100%;
+                  text-align: center;
+                  transition: transform 0.6s;
+                  transform-style: preserve-3d;
+              }
+
+              .flip-card:hover .flip-card-inner {
+                  transform: rotateY(180deg);
+              }
+
+              .flip-card-front, .flip-card-back {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  backface-visibility: hidden;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  border-radius: 10px;
+                  padding: 25px;
+                  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+              }
+
+              .flip-card-front {
+                  background-color: #FFEB3B;
+                  color: #3E2723;
+                  font-family: 'Indie Flower', cursive;
+                  transform: rotate(2deg);
+              }
+
+              .flip-card-back {
+                  background-color: #5D4037;
+                  color: white;
+                  transform: rotateY(180deg);
+              }
           </style>
       </head>
       <body>
@@ -49,8 +98,8 @@ container:
               <h1 class="logo">Willow River Automation Services</h1>
               <nav>
                   <ul>
-                      <li><a href="#">Home</a></li>
-                      <li><a href="#">About Us</a></li>
+                      <li><a href="#" data-page="landing">Home</a></li>
+                      <li><a href="#" data-page="aboutUs">About Us</a></li>
                       <li><a href="#">Services</a></li>
                       <li><a href="#">Contact</a></li>
                       <li><a href="#" class="login-button">Login</a></li>
@@ -68,17 +117,38 @@ container:
           </section>
 
           <section class="features">
-              <div class="feature">
-                  <h3>Workflow Automation</h3>
-                  <p>Eliminate manual processes and optimize efficiency.</p>
+              <div class="flip-card">
+                  <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <h3>Workflow Automation</h3>
+                          <p>Eliminate manual processes and optimize efficiency.</p>
+                      </div>
+                      <div class="flip-card-back">
+                          <p>Automating workflows allows businesses to scale operations without the burden of manual tasks. It reduces errors, improves productivity, and lets your team focus on high-value activities.</p>
+                      </div>
+                  </div>
               </div>
-              <div class="feature">
-                  <h3>Process Optimization</h3>
-                  <p>Identify and improve business workflows.</p>
+              <div class="flip-card">
+                  <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <h3>Process Optimization</h3>
+                          <p>Identify and improve business workflows.</p>
+                      </div>
+                      <div class="flip-card-back">
+                          <p>Optimizing processes ensures that businesses operate efficiently by eliminating bottlenecks and redundancies. With streamlined workflows, companies can deliver better results faster.</p>
+                      </div>
+                  </div>
               </div>
-              <div class="feature">
-                  <h3>Systems Integration</h3>
-                  <p>Seamlessly connect your business software and tools.</p>
+              <div class="flip-card">
+                  <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <h3>Systems Integration</h3>
+                          <p>Seamlessly connect your business software and tools.</p>
+                      </div>
+                      <div class="flip-card-back">
+                          <p>Integrating systems creates a seamless flow of information between different business tools, eliminating data silos. This leads to better decision-making and improved efficiency.</p>
+                      </div>
+                  </div>
               </div>
           </section>
 

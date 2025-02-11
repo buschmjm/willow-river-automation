@@ -81,8 +81,8 @@ container:
               <h1 class="logo">Willow River Automation Services</h1>
               <nav>
                   <ul>
-                      <li><a href="#">Home</a></li>
-                      <li><a href="#">About Us</a></li>
+                      <li><a href="#" data-page="landing">Home</a></li>
+                      <li><a href="#" data-page="aboutUs">About Us</a></li>
                       <li><a href="#">Services</a></li>
                       <li><a href="#">Contact</a></li>
                       <li><a href="#" class="login-button">Login</a></li>
